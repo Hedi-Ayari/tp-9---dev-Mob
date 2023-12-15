@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/textintro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/intro_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:id="@+id/choose_dessert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/choose_a_dessert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textintro" />
+
+    <ImageView
+        android:id="@+id/donut"
+        android:layout_width="93dp"
+        android:layout_height="91dp"
+
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="44dp"
+        android:contentDescription="@string/donuts"
+        android:src="@drawable/donut_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choose_dessert"
+        android:onClick="showDonutOrder"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:padding="20dp"
+        android:text="@string/donuts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/donut"
+        app:layout_constraintStart_toEndOf="@+id/donut"
+        app:layout_constraintTop_toBottomOf="@+id/choose_dessert" />
+    <ImageView
+        android:id="@+id/ice_cream"
+        android:layout_width="93dp"
+        android:layout_height="91dp"
+
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="44dp"
+        android:contentDescription="@string/ice_cream_sandwiches"
+        android:src="@drawable/icecream_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/donut"
+        android:onClick="showIceCreamOrder"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:padding="20dp"
+        android:text="@string/ice_cream_sandwiches"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/donut"
+        app:layout_constraintStart_toEndOf="@+id/ice_cream"
+        app:layout_constraintTop_toBottomOf="@+id/donut" />
+
+    <ImageView
+        android:id="@+id/froyo"
+        android:layout_width="93dp"
+        android:layout_height="91dp"
+
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="44dp"
+        android:contentDescription="@string/froyo"
+        android:src="@drawable/froyo_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ice_cream"
+        android:onClick="showFroyoOrder"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:padding="20dp"
+        android:text="@string/froyo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/froyo"
+        app:layout_constraintStart_toEndOf="@+id/froyo"
+        app:layout_constraintTop_toBottomOf="@+id/ice_cream" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

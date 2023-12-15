@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.droidcafe.MainActivity">
+    <item
+        android:id="@+id/action_contact"
+        android:title="@string/action_contact"
+        app:showAsAction="never"
+
+        android:orderInCategory="100"/>
+    <item
+        android:id="@+id/action_order"
+        android:orderInCategory="10"
+        android:title="@string/action_order"
+        android:icon="@drawable/ic_order_white"
+
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_status"
+        android:orderInCategory="20"
+        android:title="@string/action_status"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_status_white"/>
+    <item
+        android:id="@+id/action_favorites"
+        android:orderInCategory="40"
+        android:title="@string/action_favorites"
+        android:icon="@drawable/ic_favorites_white"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="50"
+        android:title="@string/Settings"
+        app:showAsAction="never" />
+
+
+</menu>

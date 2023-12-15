@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Adding Settings to an App</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="switch_title">Settings option</string>
+    <string name="switch_summary">Turn this option on or off</string>
+
+    <string name="lorem_ipsum">
+       hello world
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
